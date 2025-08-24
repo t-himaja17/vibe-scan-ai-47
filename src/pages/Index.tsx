@@ -45,7 +45,7 @@ const Index = () => {
 
       {/* Main Content */}
       <div className="pt-20">
-        {view === "hero" ? <Hero /> : <Dashboard />}
+        {view === "hero" ? <Hero onNavigateToDashboard={() => setView("dashboard")} /> : <Dashboard />}
       </div>
     </div>
   );
